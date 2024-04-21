@@ -1,0 +1,51 @@
+@import './footer.scss';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Exo 2';
+    src: url(../fonts/Exo2/Exo2-SemiBold.woff);
+    font-display: swap;
+    font-style: normal;
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'PT Sans';
+    src: url(../fonts/PT-sans/PTSans-Regular.woff);
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400;
+}
+
+$Exo2:'Exo 2';
+$PT-Sans: 'PT Sans';
+
+$Black: #363738;
+$Grey: #6B6B6C;
+
+@mixin normal-display{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin Exo2 {
+    font-family: $Exo2;
+    font-style: normal;
+    font-weight: 600;
+    color: $Black;
+}
+
+@mixin PT-Sans {
+    font-family: $PT-Sans;
+    font-style: normal;
+    font-weight: 400;
+    color: $Grey;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
